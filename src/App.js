@@ -1,25 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import Interview from './Interview'
+import React from 'react';
 
 function App() {
+  const newElem = React.createElement('div', null, "Inside element")
+  const newElement = React.createElement('div', null, [newElem, "Hey I am in the array"])
+  // 3 parameter is children
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <h1>This is h1 tag</h1>
   );
 }
 
 export default App;
+
+
+
+
+// function App() {
+//   const newElement = React.createElement('div', null, "Hey you have created an element")
+//   return (
+//     newElement
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+// function App() {
+//   const newElem = React.createElement('div', null, "Inside element")
+//   const newElement = React.createElement('div', null, [newElem, "Hey I am in the array"])
+//   // 3 parameter is children
+
+
+//   return (
+//     newElement
+//   );
+// }
